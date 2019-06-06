@@ -1,0 +1,189 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<div class="container-fluid">
+  <div class="row">
+
+
+  <div class="col-md-2" class="fixer">
+
+
+  </div>
+    <div class="col-md-10 qstions">
+      <h1 id='angular'>Angular Questions</h1>
+      {%if angular%}
+      {% for cat in angular %}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer}}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='django'>Django Questions</h1>
+      {%if django%}
+      {%for cat in django%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='flask'>Flask Questions</h1>
+      {%if flask%}
+      {%for cat in flask%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='general'>General Questions</h1>
+      {%if general%}
+      {%for cat in general%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='html'>HTML Questions</h1>
+      {%if html%}
+      {%for cat in html%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='java'>Java Questions</h1>
+      {%if java%}
+      {%for cat in java%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='javascript'>Javascript Questions</h1>
+      {%if javascript%}
+      {%for cat in javascript%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='jquery'>jQuery Questions</h1>
+      {%if jQuery%}
+      {%for cat in jQuery%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='postgresql'>Postgresql Questions</h1>
+      {%if postgresql%}
+      {%for cat in postgresql%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer }}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+      <h1 id='python'>Python Questions</h1>
+      {%if python%}
+      {%for cat in python%}
+      <div class="card-body us">
+
+           <h3>{{cat.question}}</h3>
+          <p>{{cat.answer}}</p>
+
+          <span  style="margin-left:10px;"class="badge badge-pill badge-primary">{{cat.category}}</span>
+      </div>
+      {%endfor%}
+      {% else %}
+        				<div class="alert">
+        					<h2 class="alert alert-info animated fadeIn"> No questions posted yet</h2>
+        				</div>
+      {%endif%}
+
+  </div>
+  </div>
+</div>
+
+{%endblock%}

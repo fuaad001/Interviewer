@@ -1,0 +1,72 @@
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand waves-effect" href="{% url 'index' %}" target="_self">
+      <strong class="blue-text">Interviewer</strong>
+    </a>
+
+    <!-- Collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Left -->
+      <ul class="navbar-nav mr-auto hide">
+        <li class="nav-item active one">
+          <a class="nav-link waves-effect" href="{% url 'index' %}">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item two">
+          <a class="nav-link waves-effect" href="{% url 'questions' %}" target="_self">Questions</a>
+        </li>
+        <li class="nav-item three">
+          <a class="nav-link waves-effect" href="{% url 'notes' %}"
+            target="_self">Revision notes</a>
+        </li>
+        <li class="nav-item three">
+          <a class="nav-link waves-effect" href="{% url 'notes' %}"
+            target="_self">Contact a Mentor</a>
+        </li>
+        <li class="nav-item three">
+          <a class="nav-link waves-effect" href="{% url 'notes' %}"
+            target="_self">Take a Mock Interview</a>
+        </li>
+        <li class="nav-item three">
+          <a class="nav-link waves-effect" href="{% url 'notes' %}"
+            target="_self">Give Feedback</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Sidebar -->
+<div class="sidebar-fixed position-fixed">
+
+  <h1>Categories</h1>
+
+  <ul class="list-group">
+    <a href="#angular"><li class="list-group-item">Angular</li></a>
+    <a href="#django"><li class="list-group-item">Django</li></a>
+    <a href="#flask"><li class="list-group-item">Flask</li></a>
+    <a href="#general"><li class="list-group-item">General</li></a>
+    <a href="#html"><li class="list-group-item">Html</li></a>
+    <a href="#java"><li class="list-group-item">Java</li></a>
+    <a href="#javascript"><li class="list-group-item">Javascript</li></a>
+    <a href="#jquery"><li class="list-group-item">jQuery</li></a>
+    <a href="#postgresql"><li class="list-group-item">Postgresql</li></a>
+    <a href="#python"><li class="list-group-item">Python</li></a>
+  </ul>
+
+</div>
+<!-- Sidebar -->
